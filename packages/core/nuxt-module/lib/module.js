@@ -70,6 +70,7 @@ module.exports = function VueStorefrontNuxtModule (moduleOptions) {
   log.success('Installed Vue Storefront E2E testing plugin');
 
   // i18n-cookies plugin
+  log.info('Internationalization Cookies Options: ' + JSON.stringify(this.options));
   this.addPlugin({
     src: path.resolve(__dirname, 'plugins/i18n-cookies.js'),
     options: this.options.i18n
